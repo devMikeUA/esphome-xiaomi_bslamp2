@@ -54,7 +54,8 @@ script:
                 id: my_light_mode
                 state: night
           then:
-            - front_panel.turn_on_leds: [ POWER ]
+            - front_panel.turn_on_leds: [ ]
+            # - front_panel.turn_on_leds: [ POWER ]
       - front_panel.update_leds:
 
 # This component controls the LED lights of the lamp.
